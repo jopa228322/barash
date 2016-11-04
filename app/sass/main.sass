@@ -1,0 +1,874 @@
+
+body
+	margin: 0
+	outline: 0
+	padding: 0
+	height: 100%
+	img
+		width: 100%
+		height: 100%
+	.obert-barash
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: #212121
+		z-index: 2
+		h3
+			color: #fff
+			text-align: center
+			letter-spacing: 2.5px
+	.imgbarash
+		width: 270px
+		height: 200px
+		margin: 20% auto 0
+		position: relative
+		z-index: 5
+		background-image: url(../img/bye.gif)
+		background-size: cover 
+	
+html
+	height: 100%	
+	
+a
+	text-decoration: none
+	transition: 0.5s all
+
+#animal_sheep:checked + label
+	color: red
+.container
+	max-width: 1280px
+	margin: 0 auto
+	width: 100%
+	min-width: 320px
+	.select-produkt
+		>h1
+			font-size: 40px
+			font-family: "GillSansNovaHeavy"
+			>span
+				font-size: 112px
+				font-family: "GillSansNovaHeavy"
+		.select-meat
+			display: flex
+			justify-content: space-between
+			padding: 0 1.9% 
+
+			.sheep
+
+				label
+					border-color: #212121
+					margin: 2px
+					width: 27%
+					padding: 15px
+					border:  1px solid
+					border-radius: 70px
+					display: flex
+
+					>input
+						display: none
+						color: red
+
+						.img-icon
+							width: 28%
+							height: 80%
+							padding: 1%
+						.icon-text
+							width: 55%
+							padding: 1%
+							margin: 0 auto	
+							>h3
+								font-size: 16px
+								font-family: "GillSansNovaHeavy"
+							>p
+								font-size: 14px
+								font-family: "GillSansNovaLight"	
+
+			.cow
+				border-color: #212121
+				margin: 2px
+				width: 27%
+				padding: 15px
+				border:  1px solid
+				border-radius: 70px
+				display: flex
+				>label			
+					>input
+						display: none
+						background-color: red
+
+						.img-icon
+							width: 28%
+							height: 80%
+							padding: 1%
+						.icon-text
+							width: 55%
+							padding: 1%
+							margin: 0 auto	
+							>h3
+								font-size: 16px
+								font-family: "GillSansNovaHeavy"
+							>p
+								font-size: 14px
+								font-family: "GillSansNovaLight"	
+			.chicken
+				border-color: #212121
+				margin: 2px
+				width: 27%
+				padding: 15px
+				border:  1px solid
+				border-radius: 70px
+				display: flex
+				.img-icon
+					width: 28%
+					height: 80%
+					padding: 1%
+				.icon-text
+					width: 55%
+					padding: 1%
+					margin: 0 auto	
+					>h3
+						font-size: 16px
+						font-family: "GillSansNovaHeavy"
+					>p
+						font-size: 14px
+						font-family: "GillSansNovaLight"
+	.podbor-obertk
+		width: 92%
+		margin: 0 auto
+		display: flex
+		.vibr-produkt
+		.row-sel
+			height: 100%
+			display: flex
+			justify-content: space-between	
+			width: 100%				
+			.opis-sel-tov
+				display: flex
+				width: 27%
+				.live-eat
+				.kol-vo	
+			.privez-tovar
+				width: 39%	
+	.oform-zakaz
+		width: 100%
+		display: flex
+		justify-content: space-between
+		.fio
+			width: 30%
+			text-align: center
+			>input
+				text-align: center
+				border: 1px solid #212121
+				border-radius: 50px;
+				margin: 5%
+				padding: 2%
+		.p-number
+			width: 30%
+			text-align: center
+			>input
+				text-align: center
+				border: 1px solid #212121
+				border-radius: 50px;
+				margin: 5%
+				padding: 2%
+		.adres
+			width: 30%
+			text-align: center
+			>input
+				text-align: center
+				border: 1px solid #212121
+				border-radius: 50px;
+				margin: 5%
+				padding: 2%
+
+
+
+
+.project
+	display: none
+	position: fixed
+	top: -100%
+	height: 100%
+	z-index: 5
+	width: 100%
+
+.row
+	height: 100%
+	display: flex
+	justify-content: space-between
+	> a:hover
+		color: #9e9e9e
+
+
+.screen-1 
+	height: 100% 
+	position: relative
+	z-index: 1
+	.zakazi
+		.myzak
+			margin: 5% 0 5%
+			>h1
+				font-size: 36px
+		.opiszakaza
+			display: flex
+			box-shadow: 0px 0px 20px #ababab
+			margin: 5% 0 5%
+			.img-zakaz
+				width: 18%
+				.sheep
+					margin: 12%
+			.about-zakaz
+				width: 52%
+				.text-about
+					>h2
+						font-size: 33px
+						font-family: "GillSansNovaHeavy"
+						margin: 5% 0 0
+					>h3
+						font-size: 16px
+						font-family: "GillSansNovaBook"
+						margin: 1% 0 0	
+				.stad-zakaz
+					display: flex
+					justify-content: space-between
+					align-items: center
+					margin-top: 1.5%
+					.utoch-zakaz
+						width: 20%
+						text-align: center
+						>p
+							font-size: 14px
+							color:  rgb(173, 173, 173)
+							font-family: "GillSansNovaLight"
+						.dl-hr
+							position: relative
+							>hr
+								height: 2px
+								background-color: #616161
+								border-color: #616161
+								box-shadow: none
+								border: none
+							.dot
+								position: absolute
+								height: 8px
+								width: 8px
+								border: 1px solid #616161
+								border-radius: 50%
+								top: -5px
+								left: calc(50% - 5px)
+								background-color: white	
+						.selected
+							>hr
+								color: #4caf50
+								background-color: #4caf50
+							.dot
+								background-color: #4caf50
+								border-color: #4caf50
+			.button-zakaz
+				align-self: center
+				width: 24%
+				margin: 0 auto
+				.stop-zakaz
+					>button
+						background-image: url(../img/trash.png)
+						font-family: "GillSansNovaHeavy"
+						background-size: 104% 110%
+						border-radius: 70px
+						border: none
+						background-repeat: no-repeat
+						background-position: center center
+						padding: 5% 17%
+						color: white
+						font-size: 14px
+						width: 100%
+						display: block
+				.menedjer
+					>button
+						background-image: url(../img/contact.png)
+						font-family: "GillSansNovaHeavy"
+						background-size: 104% 121%
+						border-radius: 70px
+						border: none
+						background-repeat: no-repeat
+						background-position: center center
+						padding: 5% 13%
+						color: white
+						font-size: 14px
+						width: 100%
+						display: block
+
+
+	> header
+		.info
+			width: 100%
+			background-color: #212121
+			color: #ffffff
+			.kontakt
+				height: 50px
+				margin: 0 auto
+				max-width: 1280px
+				display: flex
+				.number
+					margin: 0 auto
+					align-items: center	
+					padding: 17px 0
+					width: 50%
+
+					>ul
+						display: flex
+						list-style-type: none
+						margin: 0
+						padding-left: 2.6%
+						>li
+							padding-right: 15px
+							font-size: 16px
+							>i
+								font-size: 16px
+				.adres
+					width: 50%
+					align-items: center	
+					padding: 17px 0
+					width: 50%
+					text-align: right
+					font-size: 16px
+					letter-spacing: 0.5px
+					>i
+						padding-right: 1%
+
+
+		.logoandmore
+			display: flex
+			width: 25.48%
+			height: 80px
+					
+			.logo
+				padding: 10px
+
+			.freshmeat
+				font-size: 80%
+				text-align: center
+				>h2
+					padding: 0
+					margin: 10px 0 0 
+					font-family: "GillSansNovaBook"
+					font-size: 27.66px
+					letter-spacing: 0.5px
+				>h5	
+					padding: 0
+					margin: 0 0 0 
+					font-family: "GillSansNovaBook"
+					font-size: 12.5px
+					letter-spacing: 0.5px
+
+
+
+		.men 
+			width: 52%
+			align-items: center
+			height: 80px
+					
+			a
+				color: #212121
+				position: relative
+				display: block
+				font-family: "GillSansNovaBook"
+				font-size: 18px
+				letter-spacing: 0.5px
+
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					height: 24px
+					width: 22px
+					background-image: url("../img/barashub.png")
+					top: 0
+					left: -32px
+					transition: 0.2s all
+					opacity: 0
+
+				&:hover:before
+					opacity: 1
+
+				&:last-child:before
+					background-image: none
+
+
+
+
+				
+
+	&__bottom
+		background-image: url("../img/fon.png")
+		height: calc(100% - 130px)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+
+	.welcome
+		width: 55.58%
+		align-items: center
+		padding-top: 15%
+
+		>h2
+				color: white
+				padding-top: 16.03%
+				letter-spacing: 1px
+				font-size: 36px
+				font-family: "GillSansNovaHeavy"
+
+
+
+		>a
+			margin: 40px
+			padding: 15px
+			outline: 1px solid red
+			color: white
+			transition: 0.5s all
+
+
+		.bonline
+			line-height: 1.5
+			color: white
+			
+			
+			>h5
+				color: white
+				font-family: "GillSansNovaLight"
+				font-size: 20px
+				letter-spacing: 1px
+		
+
+		.button-rectangle
+			width: 294px
+			text-align: center
+			border: 2px solid #fff
+			padding: 12px
+			position: relative
+			z-index: 2
+			box-sizing: border-box 
+
+		.button-rectangle
+			>a
+				color: white
+				position: relative
+				z-index: 3
+				font-size: 24px
+				font-family: "GillSansNovaLight"
+
+		.button-rectangle:before
+			content: ""
+			opacity: 1
+			border: 2px solid #fff
+			position: absolute
+			top: -0.4px
+			left: -2px
+			width: 284px
+			height: 50px
+			z-index: 1
+			padding: 3px
+
+		.button-rectangle:hover 
+			>a
+				color: #9e9e9e;
+				transition: 0.3s	
+
+		.button-rectangle:hover:before
+			opacity: 1
+			left: 37px
+			width: 208px
+			background-color: #fff
+			transition: 0.8s
+			-webkit-transform: skew(-50deg)
+			-moz-transform: skew(-50deg)
+			-o-transform: skew(-50deg)
+.separator
+		width: 30px
+		height: 120px
+		position: absolute
+		top: calc(50% - 60px)
+		left: calc(50% - 15px)
+		z-index: 55
+		border: 1px solid #212121
+		border-radius: 15px
+		background-color: #FFF
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		padding: 25px 0
+		box-sizing: border-box
+		span
+			display: block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			border: 1px solid #212121
+			&.active
+				background-color: #212121
+.close_button
+		height: 50px
+		width: 50px 
+		position: absolute
+		right: 20px
+		top: 20px
+		font-size: 50px
+		cursor: pointer
+		z-index: 5
+.screen-2
+	height: 100%
+	width: 100%
+	//z-index: 3
+	position: absolute
+	
+	
+	.wrapper
+		height: 100%
+
+		.screen-2__left-column, .screen-2__right-column
+			width: 50%
+			min-width: 640px
+			height: 100%
+			position: relative
+
+
+		.screen-2__left-column
+			background-color: white
+			background-image: url("../img/left-screen.png")
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: +97% 0
+
+		.screen-2__right-column
+			background-color: white
+			
+		
+
+			.screen-2__right-column__opisan
+				
+				width: 90%
+				height: 100%
+				margin: 0 auto
+				padding-top: 3%
+				padding-bottom: 3%
+
+				
+				&__produk
+
+					&__obertk
+						margin: 0 10px
+						line-height: 1.5
+
+						>h2
+							font-family: "GillSansNovaheavy"
+							font-size: 36px	
+						>p	
+							font-family: "GillSansNovaBook"
+							font-size: 18px	
+
+						&__opistext
+							padding-bottom: 3%		
+							>p
+								width: 90%
+							>hr
+								width: 26%
+								margin-left: 0		
+						&__baranopis
+							display: flex
+							padding-bottom: 10%
+							
+							&__imgopis
+								width: 20%
+								height: 175px
+								padding-right: 2.5%
+							&__textopis
+								width: 79.6666666%
+								margin-left: 1%
+								padding-top: 3%
+
+
+.screen-3	
+	height: 100%
+	position: absolute
+	top: 0
+	bottom: 0
+	width: 100%
+	display: none
+	//z-index: 4
+
+	.wrapper
+		height: 100%
+
+		.screen-3__left-column, .screen-3__right-column
+			width: 50%
+			min-width: 640px
+			height: 100%
+			position: relative
+			
+
+
+		.screen-3__left-column
+			background-color: white
+			top: -100%
+			background-image: url("../img/left-screen.png")
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: +97% 0
+
+		.screen-3__right-column
+			background-color: white
+			bottom: -100%
+		
+
+			&__opisan
+				
+				width: 90%
+				height: 100%
+				margin: 0 auto
+				padding-top: 3%
+				padding-bottom: 3%
+				box-sizing: border-box
+
+				
+				&__produk
+
+					&__obertk
+						margin: 0 10px
+						line-height: 1.5
+
+						>h2
+							font-family: "GillSansNovaheavy"
+							font-size: 36px	
+						>p	
+							font-family: "GillSansNovaBook"
+							font-size: 18px	
+
+						&__opistext
+							padding-bottom: 3%		
+							>p
+								width: 90%
+							>hr
+								width: 26%
+								margin-left: 0	
+						&__baranopis
+							display: flex
+							padding-bottom: 10%
+							
+							&__imgopis
+								width: 20%
+								height: 175px
+								padding-right: 2.5%
+							&__textopis
+								width: 79.6666666%
+								margin-left: 1%
+								padding-top: 3%
+
+
+.screen-4					
+	position: relative
+	z-index: 5
+	//display: none
+
+	&__wrapper
+		height: 100%
+		color: black
+		&__containerfoot
+			max-width: 1280px
+			margin: 0  auto 
+			width: 100%
+			min-width: 320px
+			padding-top: 30px
+
+		
+
+			&__menufoot
+				width: 80%
+				margin: 0 auto 1%
+				display: flex
+				&__men
+					width: 70%
+					align-items: center
+					height: 43px
+					>a
+						color: #212121
+						display: block
+						font-family: "GillSansNovaBook"
+						font-size: 18px
+						letter-spacing: 0.5px
+						margin-bottom: 1%
+						>i
+							font-size: 30px
+							margin: 0
+				&__socfoot
+					width: 29%
+					
+					>a
+						color: #212121	
+						margin: 0 auto	
+						font-size: 30px	
+						margin: 7px 0 0 8%
+							
+							
+
+						
+			&__logoandmoref
+				margin: 0 auto
+				width: 50%
+				height: 100%
+				display: flex
+				padding: 15px
+				align-items: center
+				justify-content: center
+				&__logof
+					width: 14.46%
+					padding: 10px
+
+				&__freshmeatf
+					>h2
+						margin: 10px
+						font-family: "GillSansNovaBook"
+						font-size: 40.5px
+						letter-spacing: 0.5px
+						line-height: 1
+					>h5
+						padding: 0
+						font-family: "GillSansNovaBook"
+						font-size: 16.5px
+						letter-spacing: 1.4px
+						margin: 10px 
+
+
+.bgc
+	position: fixed 
+	background-color: rgba(33, 33, 33, 0.5)
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	.enter 
+		margin: calc(33% - 434px) auto 0
+		background-color: #fff
+		width: 33%
+		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
+		border-radius: 10px
+		.vhod
+			padding-top: 3%
+			text-align: center
+			margin: 0 auto
+			display: space-around
+			>h1
+				font-size: 36px;
+		.sign-up
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%
+			.registr
+				text-align: right
+				font-size: 18.64px
+				>a
+					color: #212121
+					border-bottom: 2px dashed #212121 
+				a:hover
+					color:rgba(33, 33, 33, 0.73)
+					transition: 0.5s all
+		.log
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%;
+			.form-log
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.email
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%;
+			.form-email
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.pass
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%;
+			.form-pass
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.name
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%
+			.form-name
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.surname
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%
+			.form-surname
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.authorize
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 5%
+			.form-authorize
+				width: 100%
+				text-align: center
+				input
+					width: 100%
+					padding: 2% 2% 2% 2%
+					color: white
+					font-size: 18px
+					background-color: #212121
+					outline: 2px solid #212121
+					margin: 0 auto
+	.successful-enter
+		margin: calc(33% - 434px) auto 0
+		background-color: #fff
+		width: 33%
+		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
+		border-radius: 10px
+		.imgs
+			width: 45%
+			margin: 0 auto
+			padding-top: 10%
+		.successful-authorize
+			width: 70%
+			margin: 0 auto
+			text-align: center
+			font-size: 18px
+			padding-top: 10%
+			padding-bottom: 10%
+
