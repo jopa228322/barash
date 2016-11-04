@@ -483,45 +483,10 @@ a
 			-webkit-transform: skew(-50deg)
 			-moz-transform: skew(-50deg)
 			-o-transform: skew(-50deg)
-.separator
-		width: 30px
-		height: 120px
-		position: absolute
-		top: calc(50% - 60px)
-		left: calc(50% - 15px)
-		z-index: 55
-		border: 1px solid #212121
-		border-radius: 15px
-		background-color: #FFF
-		display: flex
-		flex-direction: column
-		justify-content: space-around
-		align-items: center
-		padding: 25px 0
-		box-sizing: border-box
-		span
-			display: block
-			width: 10px
-			height: 10px
-			border-radius: 50%
-			border: 1px solid #212121
-			&.active
-				background-color: #212121
-.close_button
-		height: 50px
-		width: 50px 
-		position: absolute
-		right: 20px
-		top: 20px
-		font-size: 50px
-		cursor: pointer
-		z-index: 5
+
 .screen-2
 	height: 100%
 	width: 100%
-	//z-index: 3
-	position: absolute
-	
 	
 	.wrapper
 		height: 100%
@@ -590,13 +555,7 @@ a
 
 .screen-3	
 	height: 100%
-	position: absolute
-	top: 0
-	bottom: 0
 	width: 100%
-	display: none
-	//z-index: 4
-
 	.wrapper
 		height: 100%
 
@@ -610,7 +569,6 @@ a
 
 		.screen-3__left-column
 			background-color: white
-			top: -100%
 			background-image: url("../img/left-screen.png")
 			background-size: cover
 			background-repeat: no-repeat
@@ -618,8 +576,7 @@ a
 
 		.screen-3__right-column
 			background-color: white
-			bottom: -100%
-		
+
 
 			&__opisan
 				
@@ -746,12 +703,17 @@ a
 	right: 0
 	top: 0
 	bottom: 0
+	z-index: 55
+	display: none
+
 	.enter 
-		margin: calc(33% - 434px) auto 0
+		margin: calc(33% - 510px) auto 0
 		background-color: #fff
 		width: 33%
 		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
 		border-radius: 10px
+		&.auth
+			display: none
 		.vhod
 			padding-top: 3%
 			text-align: center
