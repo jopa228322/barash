@@ -50,41 +50,79 @@
 			<h1><span>1.</span>ВЫБЕРИТЕ ПРОДУКЦИЮ</h1>
 			<div class="select-meat">
 					<div class="sheep"> 
-						<input name="animal" type="checkbox" id="animal_sheep">
-						<div>
-							<label for="animal_sheep" >
-								
-						<img src="img/Layer-4.png" alt="">
-						<div class="icon-text"><h3>БАРАНИНА</h3>
-						<p>
-							Унас вы можете заказать свежее мясо не выходя из дома.
-						</p>
-						</div>
+						<input name="sheep" type="checkbox"  id="animal_sheep">
+						<label for="animal_sheep" >
+							<div class="img-icon"><img src="img/Layer-4.png" alt=""></div>
+							<div class="icon-text"><h3>БАРАНИНА</h3>
+							<p>
+								Самая лучшая баранина Дагестана.
+							</p>
+							</div>
 						</label>
 						
 					</div>
-				</div>
-				
+					
 				<div class="cow">
-				<label for="animal_cow" >
-							<input name="animal" type="checkbox" id="animal_cow">
-					<div class="img-icon"><img src="img/Layer-5.png" alt=""></div>
-					<div class="icon-text">
-						<h3>ТЕЛЯТИНА</h3>
-					<p>
-						Унас вы можете заказать свежее мясо не выходя из дома.
-					</p>
-					</div>
-				</label>
+					<input name="cow" type="checkbox" id="animal_cow">
+					<label for="animal_cow" >
+						<div class="img-icon"><img src="img/Layer-5.png" alt=""></div>
+						<div class="icon-text">
+							<h3>ТЕЛЯТИНА</h3>
+						<p>
+							Закажите целиком или разделанную тушу.
+						</p>
+						</div>
+					</label>
 				</div>
 				<div class="chicken">
-					<div class="img-icon"><img src="img/Layer-6.png" alt=""></div>
-					<div class="icon-text">
-						<h3>КУРИЦА</h3>
-					<p>
-						Унас вы можете заказать свежее мясо не выходя из дома.
-					</p>
-					</div>
+					<input name="chicken" type="checkbox" id="animal_chicken">
+					<label for="animal_chicken">
+						<div class="img-icon"><img src="img/Layer-6.png" alt=""></div>
+						<div class="icon-text">
+							<h3>КУРИЦА</h3>
+						<p>
+							Свежее куринное мясо, прямо с фермы.
+						</p>
+						</div>
+					</label>
+				</div>
+			</div>
+			<div class="select-meat">
+				<div class="head">
+					<input name="head" type="checkbox" id="animal_head">
+					<label for="animal_head">
+						<div class="img-icon"><img src="img/Layer-4.png" alt=""></div>
+						<div class="icon-text">
+							<h3>ГОЛОВА</h3>
+						<p>
+							Любите варенную баранью голову?
+						</p>
+						</div>
+					</label>
+				</div>
+				<div class="sherst">
+					<input name="sherst" type="checkbox" id="animal_sherst">
+					<label for="animal_sherst">
+						<div class="img-icon"><img src="img/Layer-4.png" alt=""></div>
+						<div class="icon-text">
+							<h3>ШКУРА</h3>
+						<p>
+							Хотите заказать шкуру или шерсть?
+						</p>
+						</div>
+					</label>
+				</div>
+				<div class="other">
+					<input name="other" type="checkbox" id="animal_other">
+					<label for="animal_other">
+						<div class="img-icon"><img src="img/Layer-4.png" alt=""></div>
+						<div class="icon-text">
+							<h3>ДРУГОЕ</h3>
+						<p>
+							Куринные лапки, копыта или внутренности?
+						</p>
+						</div>
+					</label>
 				</div>
 			</div>
 			<h1><span>2.</span>ПОДБЕРИТЕ МЯСО ПО ВСЕМ КАТЕГОРИЯМ</h1>
@@ -94,8 +132,15 @@
 					</div>
 					<div class="row-sel">
 						<div class="opis-sel-tov">
-							<div class="live-eat">1</div>
-							<div class="kol-vo">2</div>
+							<div class="live-eat">
+							<input type="radio" value="live" id="live">
+							<label for="live"> Живая</label><br>
+							<input type="checkbox" id="master">
+							<label for="master"> Вызвать мастера</label>
+							</div>
+							<div class="oform-zakaz">
+								<div class="kol-vo"><input  type="text" placeholder="Кол-во"></div>
+							</div>
 							
 						</div>
 						<div class="privez-tovar">
@@ -109,6 +154,7 @@
 				<div class="fio"><input  type="text" placeholder="Введите Ф.И.О."></div>
 				<div class="p-number"><input type="text" placeholder="+7 (___)-___-__-__"></div>
 				<div class="adres"><input type="text" placeholder="Адрес"></div>
+				<div class="data"><input type="text" placeholder="Дата получения"></div>
 			</div>
 				
 		</div>

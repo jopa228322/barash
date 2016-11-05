@@ -3,6 +3,8 @@ body {
   outline: 0;
   padding: 0;
   height: 100%; }
+  body input:focus {
+    outline: none; }
   body img {
     width: 100%;
     height: 100%; }
@@ -35,8 +37,20 @@ a {
   -webkit-transition: 0.5s all;
   transition: 0.5s all; }
 
-#animal_sheep:checked + label {
-  color: red; }
+#animal_sheep:checked + label, #animal_cow:checked + label, #animal_chicken:checked + label, #animal_head:checked + label, #animal_sherst:checked + label, #animal_other:checked + label {
+  border-color: #52ce22;
+  position: relative; }
+  #animal_sheep:checked + label .icon-text:after, #animal_cow:checked + label .icon-text:after, #animal_chicken:checked + label .icon-text:after, #animal_head:checked + label .icon-text:after, #animal_sherst:checked + label .icon-text:after, #animal_other:checked + label .icon-text:after {
+    content: "\f00c";
+    display: block;
+    position: absolute;
+    top: 0px;
+    color: #52ce22;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    font-family: "FontAwesome";
+    font-size: 50px; }
 
 .container {
   max-width: 1280px;
@@ -59,90 +73,38 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 1.9%; }
-    .container .select-produkt .select-meat .sheep label {
-      border-color: #212121;
-      margin: 2px;
-      width: 27%;
-      padding: 15px;
-      border: 1px solid;
-      -webkit-border-radius: 70px;
-      border-radius: 70px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .container .select-produkt .select-meat .sheep label > input {
-        display: none;
-        color: red; }
-        .container .select-produkt .select-meat .sheep label > input .img-icon {
-          width: 28%;
-          height: 80%;
-          padding: 1%; }
-        .container .select-produkt .select-meat .sheep label > input .icon-text {
-          width: 55%;
-          padding: 1%;
-          margin: 0 auto; }
-          .container .select-produkt .select-meat .sheep label > input .icon-text > h3 {
-            font-size: 16px;
-            font-family: "GillSansNovaHeavy"; }
-          .container .select-produkt .select-meat .sheep label > input .icon-text > p {
-            font-size: 14px;
-            font-family: "GillSansNovaLight"; }
-    .container .select-produkt .select-meat .cow {
-      border-color: #212121;
-      margin: 2px;
-      width: 27%;
-      padding: 15px;
-      border: 1px solid;
-      -webkit-border-radius: 70px;
-      border-radius: 70px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .container .select-produkt .select-meat .cow > label > input {
-        display: none;
-        background-color: red; }
-        .container .select-produkt .select-meat .cow > label > input .img-icon {
-          width: 28%;
-          height: 80%;
-          padding: 1%; }
-        .container .select-produkt .select-meat .cow > label > input .icon-text {
-          width: 55%;
-          padding: 1%;
-          margin: 0 auto; }
-          .container .select-produkt .select-meat .cow > label > input .icon-text > h3 {
-            font-size: 16px;
-            font-family: "GillSansNovaHeavy"; }
-          .container .select-produkt .select-meat .cow > label > input .icon-text > p {
-            font-size: 14px;
-            font-family: "GillSansNovaLight"; }
-    .container .select-produkt .select-meat .chicken {
-      border-color: #212121;
-      margin: 2px;
-      width: 27%;
-      padding: 15px;
-      border: 1px solid;
-      -webkit-border-radius: 70px;
-      border-radius: 70px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .container .select-produkt .select-meat .chicken .img-icon {
-        width: 28%;
-        height: 80%;
-        padding: 1%; }
-      .container .select-produkt .select-meat .chicken .icon-text {
-        width: 55%;
-        padding: 1%;
-        margin: 0 auto; }
-        .container .select-produkt .select-meat .chicken .icon-text > h3 {
-          font-size: 16px;
-          font-family: "GillSansNovaHeavy"; }
-        .container .select-produkt .select-meat .chicken .icon-text > p {
-          font-size: 14px;
-          font-family: "GillSansNovaLight"; }
+    .container .select-produkt .select-meat > div {
+      width: 27%; }
+      .container .select-produkt .select-meat > div input {
+        display: none; }
+      .container .select-produkt .select-meat > div label {
+        border-color: #212121;
+        margin: 2px;
+        padding: 15px;
+        border: 1px solid;
+        -webkit-border-radius: 70px;
+        border-radius: 70px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .container .select-produkt .select-meat > div label > input {
+          display: none;
+          color: red; }
+          .container .select-produkt .select-meat > div label > input .img-icon {
+            width: 28%;
+            height: 80%;
+            padding: 1%; }
+          .container .select-produkt .select-meat > div label > input .icon-text {
+            width: 55%;
+            padding: 1%;
+            margin: 0 auto; }
+            .container .select-produkt .select-meat > div label > input .icon-text > h3 {
+              font-size: 16px;
+              font-family: "GillSansNovaHeavy"; }
+            .container .select-produkt .select-meat > div label > input .icon-text > p {
+              font-size: 14px;
+              font-family: "GillSansNovaLight"; }
   .container .podbor-obertk {
     width: 92%;
     margin: 0 auto;
@@ -150,6 +112,65 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .container .podbor-obertk .kol-vo {
+      width: 150px; }
+      .container .podbor-obertk .kol-vo > input {
+        width: 100%;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        padding: 15px 30px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+    .container .podbor-obertk #master:checked + label:before {
+      content: "\f14a";
+      border: 0; }
+    .container .podbor-obertk #live:checked + label {
+      color: #52ce22; }
+      .container .podbor-obertk #live:checked + label:before {
+        content: "\f05d";
+        border: 0;
+        font-size: 25px;
+        color: #52ce22;
+        top: -2px; }
+    .container .podbor-obertk #master {
+      display: none; }
+    .container .podbor-obertk #master + label {
+      position: relative;
+      padding-left: 20px; }
+      .container .podbor-obertk #master + label:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: #212121;
+        height: 10px;
+        width: 10px;
+        font-family: "FontAwesome";
+        font-size: 15px;
+        border: 2px solid #212121;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; }
+    .container .podbor-obertk #live {
+      display: none; }
+    .container .podbor-obertk #live + label {
+      position: relative;
+      padding-left: 30px; }
+      .container .podbor-obertk #live + label:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: #212121;
+        height: 16px;
+        width: 16px;
+        font-family: "FontAwesome";
+        font-size: 15px;
+        border: 2px solid #212121;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
     .container .podbor-obertk .row-sel {
       height: 100%;
       display: -webkit-box;
@@ -179,36 +200,47 @@ a {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    .container .oform-zakaz > div {
+      margin-bottom: 20px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .container .oform-zakaz > div > input {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
     .container .oform-zakaz .fio {
-      width: 30%;
-      text-align: center; }
+      width: 350px; }
       .container .oform-zakaz .fio > input {
-        text-align: center;
+        width: 100%;
         border: 1px solid #212121;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        margin: 5%;
-        padding: 2%; }
+        padding: 15px 30px; }
     .container .oform-zakaz .p-number {
-      width: 30%;
-      text-align: center; }
+      width: 350px; }
       .container .oform-zakaz .p-number > input {
-        text-align: center;
+        width: 100%;
         border: 1px solid #212121;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        margin: 5%;
-        padding: 2%; }
+        padding: 15px 30px; }
     .container .oform-zakaz .adres {
-      width: 30%;
-      text-align: center; }
+      width: 350px; }
       .container .oform-zakaz .adres > input {
-        text-align: center;
+        width: 100%;
         border: 1px solid #212121;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        margin: 5%;
-        padding: 2%; }
+        padding: 15px 30px; }
+    .container .oform-zakaz .data {
+      width: 180px; }
+      .container .oform-zakaz .data > input {
+        width: 100%;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        padding: 15px 30px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
 
 .project {
   display: none;
@@ -427,18 +459,6 @@ a {
       font-family: "GillSansNovaBook";
       font-size: 18px;
       letter-spacing: 0.5px; }
-      .screen-1 > header .men a:before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 24px;
-        width: 22px;
-        background-image: url("../img/barashub.png");
-        top: 0;
-        left: -32px;
-        -webkit-transition: 0.2s all;
-        transition: 0.2s all;
-        opacity: 0; }
       .screen-1 > header .men a:hover:before {
         opacity: 1; }
       .screen-1 > header .men a:last-child:before {
@@ -520,7 +540,9 @@ a {
       -o-transform: skew(-50deg); }
 
 .screen-2 {
-  width: 100%; }
+  width: 100%;
+  height: -webkit-calc(100% - 127px);
+  height: calc(100% - 127px); }
   .screen-2 .wrapper {
     height: 100%; }
     .screen-2 .wrapper .screen-2__left-column, .screen-2 .wrapper .screen-2__right-column {
