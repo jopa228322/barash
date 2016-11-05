@@ -455,8 +455,7 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
-    padding-top: 15%; }
+    align-items: center; }
     .screen-1 .welcome > h2 {
       color: white;
       padding-top: 16.03%;
@@ -525,7 +524,7 @@ a {
   .screen-2 .wrapper {
     height: 100%; }
     .screen-2 .wrapper .screen-2__left-column, .screen-2 .wrapper .screen-2__right-column {
-      width: 50%;
+      width: 100%;
       min-width: 640px;
       height: 100%;
       position: relative; }
@@ -545,34 +544,50 @@ a {
         padding-bottom: 3%; }
         .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk {
           margin: 0 10px;
-          line-height: 1.5; }
-          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk > h2 {
-            font-family: "GillSansNovaheavy";
-            font-size: 36px; }
+          line-height: 1.5;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk > p {
             font-family: "GillSansNovaBook";
             font-size: 18px; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext {
             padding-bottom: 3%; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext > p {
-              width: 90%; }
+              width: 50%;
+              line-height: 1.5em;
+              font-family: "GillSansNovaBook"; }
+            .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext > h2 {
+              font-family: "GillSansNovaheavy";
+              font-size: 2em; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext > hr {
-              width: 26%;
+              width: 25%;
               margin-left: 0; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            padding-bottom: 10%; }
+            width: 30%;
+            padding-bottom: 6%; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__imgopis {
-              width: 20%;
-              height: 175px;
-              padding-right: 2.5%; }
+              width: 40%;
+              height: 50%;
+              padding-right: 2.5%;
+              margin: 0 auto; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__textopis {
-              width: 79.6666666%;
-              margin-left: 1%;
-              padding-top: 3%; }
+              width: 100%;
+              margin-top: 8%;
+              text-align: center; }
+              .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__textopis > span > p {
+                padding: 0;
+                margin: 0;
+                font-family: "GillSansNovaBook";
+                font-size: 1em; }
+              .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__textopis > span > h3 {
+                font-family: "GillSansNovaheavy";
+                font-size: 1.2em; }
 
 .screen-3 {
   height: 100%;
@@ -602,7 +617,8 @@ a {
         box-sizing: border-box; }
         .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk {
           margin: 0 10px;
-          line-height: 1.5; }
+          line-height: 1.5;
+          height: 100%; }
           .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk > h2 {
             font-family: "GillSansNovaheavy";
             font-size: 36px; }
@@ -624,7 +640,7 @@ a {
             padding-bottom: 10%; }
             .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__imgopis {
               width: 20%;
-              height: 175px;
+              height: 109px;
               padding-right: 2.5%; }
             .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__textopis {
               width: 79.6666666%;
