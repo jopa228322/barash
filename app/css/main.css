@@ -72,7 +72,8 @@ a {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 1.9%; }
+    padding: 0 1.9%;
+    margin-bottom: 5%; }
     .container .select-produkt .select-meat > div {
       width: 27%; }
       .container .select-produkt .select-meat > div input {
@@ -105,6 +106,27 @@ a {
             .container .select-produkt .select-meat > div label > input .icon-text > p {
               font-size: 14px;
               font-family: "GillSansNovaLight"; }
+  .container .stop-zakaz {
+    margin-top: 2%; }
+    .container .stop-zakaz > button {
+      background-image: url(../img/trash.png);
+      background-size: 104% 110%;
+      -webkit-border-radius: 70px;
+      border-radius: 70px;
+      border: none;
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: white;
+      width: 30%;
+      display: block;
+      margin: 0 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .container .stop-zakaz > button > p {
+        font-family: "GillSansNovaHeavy";
+        font-size: 14px; }
   .container .podbor-obertk {
     width: 92%;
     margin: 0 auto;
@@ -113,7 +135,12 @@ a {
     display: -ms-flexbox;
     display: flex; }
     .container .podbor-obertk .kol-vo {
-      width: 150px; }
+      width: 150px;
+      margin: 0 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
       .container .podbor-obertk .kol-vo > input {
         width: 100%;
         border: 1px solid #212121;
@@ -122,23 +149,25 @@ a {
         padding: 15px 30px;
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
-    .container .podbor-obertk #master:checked + label:before {
+    .container .podbor-obertk #master:checked + label:before, .container .podbor-obertk #Addhead:checked + label:before, .container .podbor-obertk #AddSh:checked + label:before, .container .podbor-obertk #AddOther:checked + label:before {
       content: "\f14a";
       border: 0; }
-    .container .podbor-obertk #live:checked + label {
+    .container .podbor-obertk #live:checked + label,
+    .container .podbor-obertk #meats:checked + label {
       color: #52ce22; }
-      .container .podbor-obertk #live:checked + label:before {
+      .container .podbor-obertk #live:checked + label:before,
+      .container .podbor-obertk #meats:checked + label:before {
         content: "\f05d";
         border: 0;
         font-size: 25px;
         color: #52ce22;
         top: -2px; }
-    .container .podbor-obertk #master {
+    .container .podbor-obertk #master, .container .podbor-obertk #Addhead, .container .podbor-obertk #AddSh, .container .podbor-obertk #AddOther {
       display: none; }
-    .container .podbor-obertk #master + label {
+    .container .podbor-obertk #master + label, .container .podbor-obertk #Addhead + label, .container .podbor-obertk #AddSh + label, .container .podbor-obertk #AddOther + label {
       position: relative;
       padding-left: 20px; }
-      .container .podbor-obertk #master + label:before {
+      .container .podbor-obertk #master + label:before, .container .podbor-obertk #Addhead + label:before, .container .podbor-obertk #AddSh + label:before, .container .podbor-obertk #AddOther + label:before {
         content: "";
         display: block;
         position: absolute;
@@ -151,13 +180,14 @@ a {
         font-size: 15px;
         border: 2px solid #212121;
         -webkit-border-radius: 3px;
-        border-radius: 3px; }
-    .container .podbor-obertk #live {
+        border-radius: 3px;
+        margin-top: 2%; }
+    .container .podbor-obertk #live, .container .podbor-obertk #meats {
       display: none; }
-    .container .podbor-obertk #live + label {
+    .container .podbor-obertk #live + label, .container .podbor-obertk #meats + label {
       position: relative;
       padding-left: 30px; }
-      .container .podbor-obertk #live + label:before {
+      .container .podbor-obertk #live + label:before, .container .podbor-obertk #meats + label:before {
         content: "";
         display: block;
         position: absolute;
@@ -170,7 +200,8 @@ a {
         font-size: 15px;
         border: 2px solid #212121;
         -webkit-border-radius: 50%;
-        border-radius: 50%; }
+        border-radius: 50%;
+        margin-top: 1%; }
     .container .podbor-obertk .row-sel {
       height: 100%;
       display: -webkit-box;
@@ -188,6 +219,18 @@ a {
         display: -ms-flexbox;
         display: flex;
         width: 27%; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > input {
+          margin-top: 15px; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > label {
+          display: block;
+          margin-bottom: 5%;
+          font-family: "GillSansNovaBold";
+          font-size: 36px; }
+          .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > label > p {
+            font-size: 13px;
+            margin: 0; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat .obernut {
+          margin-bottom: 2%; }
       .container .podbor-obertk .row-sel .privez-tovar {
         width: 39%; }
   .container .oform-zakaz {
@@ -201,7 +244,6 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .container .oform-zakaz > div {
-      margin-bottom: 20px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       .container .oform-zakaz > div > input {
