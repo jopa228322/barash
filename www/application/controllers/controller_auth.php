@@ -46,17 +46,15 @@ class Controller_Auth extends Controller
 				
 				$insert = $this->model->add_user($login, $password, $name, $sourname);
 				$_SESSION['user'] = $login;
-				$this->view->generate('auth_successful_view.php', 'template_view.php', $err);
-
+				echo "success";
 			}
 			else {
-				$this->view->generate('main_view.php', 'template_view.php', $err);
-			}	  
-		}
-		else {
-			$this->view->generate('main_view.php', 'template_view.php', $err);
+					for ($i=0; $i < count($err); $i++) { 
+						echo $err[$i]."<br>";
+					}
+				
+			}
+			  
 		}
 	}
-
-	
 }

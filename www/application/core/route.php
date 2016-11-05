@@ -46,8 +46,7 @@ class Route
 		else
 		{
 			
-			//Route::ErrorPage404();
-			echo "string";
+			Route::ErrorPage404();
 		}
 		
 	

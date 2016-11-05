@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<link rel="stylesheet" href="www/assets/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="www/assets/css/font.css">
@@ -10,10 +10,13 @@
 	<script src="www/assets/js/jquery-mousewheel/jquery.mousewheel.js"></script>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="www/assets/css/media.css">
-	<title>Document</title>
+	<title>Barash.online</title>
 </head>
 <body>
-
+	<div class="obert-barash">
+		<div class="imgbarash"></div>
+		<h3>ЗАГРУЗКА...</h3>
+	</div>
 	<section  id="screen-1" class="screen-1 screen" >
 		<header>
 			<div class="info" class="container">
@@ -43,11 +46,12 @@
 					<a href="#">ПРОДУКЦИЯ</a>
 					<a href="#">АКЦИИ</a>
 					<a href="#">ПАРТНЕРСТВО</a>
-					<a href="#" onclick="project_view();">О ПРОЕКТЕ</a>
-					<a href="#" id="form_login"><i class="fa fa-sign-in" aria-hidden="true"></i> ВХОД</a>
+					<a href="#">О ПРОЕКТЕ</a>
+					<a href="#" class="logOn"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>ВХОД</span></a>
+					<a href="#" class="lk"><i class="fa fa-user" aria-hidden="true"></i> <span>ЛИЧНЫЙ КАБИНЕТ</span></a>
 				</nav>
 			</div>
-		</header>			
+		</header>		
 	<?php include 'application/views/'.$content_view; ?>
 	<section class="screen-4">
 			<div class="screen-4__wrapper">
@@ -82,142 +86,154 @@
 			</div>
 	</section>  
 
-	 <script type="text/javascript">
-		$("#form_login").on("click",function(){
-			$(".bgc").animate({
-				top: "0%" 
-			}, 500);
-		})
-	</script> 
-
-	<div class="obert-barash">
-		<div class="imgbarash"></div>
-		<h3>ЗАГРУЗКА...</h3>
+	 <div class="bgc">
+		<div class="enter auth">
+			<div class="vhod">
+				<h1>РЕГИСТРАЦИЯ</h1>
+			</div>
+			<div class="windavt">
+				<form action="/auth" method="post">
+					<div class="email">
+						<div class="form-email">
+							<input type="text" name="login" placeholder="Email">
+						</div>
+					</div>
+					<div class="pass">
+						<div class="form-pass">
+							<input type="password" name="password" placeholder="Пароль">
+						</div>
+					</div>
+					<div class="pass">
+						<div class="form-pass">
+							<input type="password" name="password2" placeholder="Подтвердите пароль">
+						</div>
+					</div>
+					<div class="name">
+						<div class="form-name">
+							<input type="text" name="name" placeholder="Имя">
+						</div>
+					</div>
+					<div class="surname">
+						<div class="form-surname">
+							<input type="text" name="sourname" placeholder="Фамилия">
+						</div>
+					</div>	
+					<div class="authorize">
+						<div class="form-authorize">
+							<input value="Зарегистрироваться" id="AuthSub"  type="submit">
+						</div>
+					</div>
+				</form>
+				<div class="sign-up">
+					<div class="registr">
+						<a href="#" id="goLogin">Войти</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="enter login">
+			<div class="vhod">
+				<h1>ВХОД</h1>
+			</div>
+			<div class="windavt">
+				<form action="/login" method="POST">
+					<div class="log">
+						<div class="form-log">
+							<input type="text" name="login" placeholder="Email">
+						</div>
+					</div>
+					<div class="pass">
+						<div class="form-pass">
+							<input type="password" name="password" placeholder="Пароль">
+						</div>
+					</div>	
+					<div class="authorize">
+						<div class="form-authorize">
+							<input id="LoginSub" value="Авторизироваться" type="submit">
+						</div>
+					</div>	
+				</form>
+				<div class="sign-up">
+					<div class="registr">
+						<a href="#" id="goAuth">Регистрация </a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="successful-enter">
+			<div class="imgs">
+				<img src="www/assets/img/path.png">
+			</div>
+			<div class="successful-authorize">
+				ВЫ УСПЕШНО АВТОРИЗОВАЛИСЬ
+			</div>
+		</div>
 	</div>
-
 	<script type="text/javascript">
 		window.onload = function() {
-
 				$(".obert-barash").delay(1000).fadeOut(300);
-
 		}
-	</script>
-
-	<script>
-		function project_view(){
-			$(".project").css("display", "block").animate({
-				top: 0 
-			}, 500);
-		};
-		$(".close_button").on("click",function(){
-			$(".project").animate({
-				top: "-100%" 
-			}, 500, function(){
-				$(this).css("display", "none")
-			});
+		$(".lk, .successful-enter").css("display","none");
+		$(".logOn").on("click",function(){
+			$(".bgc").fadeIn(200);
+		})
+		$(".bgc").on("click",function(){
+			$(this).fadeOut(200);
+		})
+		$(".enter").on("click",function(){
+			return false
+		})
+		$("#goAuth").on("click",function(){
+			$(".login").css("display","none");
+			$(".auth").css("display","block");
+			$(".error").remove();
+		})
+		$("#goLogin").on("click",function(){
+			$(".login").css("display","block");
+			$(".auth").css("display","none");
+			$(".error").remove();
+		})
+		$("#LoginSub").on("click",function(){
+			jQuery.ajax({
+                    url:     "/login" ,
+                    type:     "POST", 
+                    dataType: "html", 
+                    data: $(".login form").serialize(), 
+                    success: function(data) { 
+                    	if(data=="error"){
+                    		$(".login").prepend("<p class='error'>Неверный логин и/или пароль</p>");
+                    	}
+                    	else{
+                    		$(".logOn").css("display","none");
+                    		$(".lk").css("display","block");
+                    		$(".login").css("display","none");
+                    		$(".successful-enter").css("display","block");
+                    		$(".bgc").delay(1000).click();
+                    	}
+                }
+			})
+		})
+		$("#AuthSub").on("click",function(){
+			jQuery.ajax({
+                    url:     "/auth" ,
+                    type:     "POST", 
+                    dataType: "html", 
+                    data: $(".auth form").serialize(), 
+                    success: function(data) { 
+                    	if(data!="success"){
+                    		$(".auth").prepend("<p class='error'>"+data+"</p>");              		
+                    	}
+                    	else{
+                    		$(".logOn").css("display","none");
+                    		$(".lk").css("display","block");
+                    		$(".successful-enter").css("display","block");
+                    		$(".auth").css("display","none");
+                    		$(".bgc").delay(1000).click();
+                    	}
+                }
+			})
 		})
 
-    var elem1 = document.getElementById('screen-2');
-    	  elem2 = document.getElementById('screen-3');
-
-    if (elem1.addEventListener) {
-      if ('onwheel' in document) {
-        // IE9+, FF17+
-        elem1.addEventListener("wheel", onWheel);
-      } else if ('onmousewheel' in document) {
-        // устаревший вариант события
-        elem1.addEventListener("mousewheel", onWheel);
-      } else {
-        // Firefox < 17
-        elem1.addEventListener("MozMousePixelScroll", onWheel);
-      }
-    } else { // IE8-
-      elem1.attachEvent("onmousewheel", onWheel);
-    }
-
-
-    if (elem2.addEventListener) {
-      if ('onwheel' in document) {
-        // IE9+, FF17+
-        elem2.addEventListener("wheel", onWheel2);
-      } else if ('onmousewheel' in document) {
-        // устаревший вариант события
-        elem2.addEventListener("mousewheel", onWheel2);
-      } else {
-        // Firefox < 17
-        elem2.addEventListener("MozMousePixelScroll", onWheel2);
-      }
-    } else { // IE8-
-      elem2.attachEvent("onmousewheel", onWheel2);
-    }
-
-    function onWheel(e) {
-      e = e || window.event;
-      var delta = e.deltaY || e.detail || e.wheelDelta;
-      if (delta > 0) {
-      	$(".screen-3").css({
-      		"display" : "block"
-      	});
-			$(".screen-3__left-column").animate({
-				top: "0%" 
-			}, 500, function(){
-				$(".screen-2__right-column").animate({
-				bottom: "-100%" 
-			}, 500);
-			});
-			$(".screen-3__right-column").animate({
-				bottom: "0%" 
-			}, 500);
-			$(".screen-2__right-column").animate({
-				top: "-100%" 
-			}, 500);
-			$(".screen-2__left-column").animate({
-				bottom: "-100%" 
-			}, 500);
-			$(".separator span:first-child").css("background-color","#fff")
-			$(".separator span:last-child").css("background-color","#212121")
-      }
-      console.log(delta);
-      e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-    }
-
-    function onWheel2(e) {
-      e = e || window.event;
-      var delta = e.deltaY || e.detail || e.wheelDelta;
-      if (delta < 0) {
-    		$(".screen-3__left-column").animate({
-				top: "-100%" 
-			}, 500, function(){
-				/*$(".screen-2__left-column").animate({
-				top: "-100px" 
-				}, 500);
-				$(".screen-2__right-column").animate({
-				bottom: "-100%" 
-				}, 500);*/
-				$(".screen-3").css({
-      		"display" : "none"
-      		});
-			});
-			$(".screen-3__right-column").animate({
-				bottom: "-100%" 
-			}, 500);
-			$(".screen-2__right-column").animate({
-				top: "0" 
-			}, 500);
-			$(".screen-2__left-column").animate({
-				bottom: "0" 
-			}, 500);
-			$(".separator span:first-child").css("background-color","#212121")
-			$(".separator span:last-child").css("background-color","#fff")
-      }
-      console.log(delta);
-      e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-    }
-  
 	</script>
-	<div class="bgc">
-		<?php include 'application/views/auth_view.php'; ?>
-		<?php include 'application/views/login_view.php'; ?>
-	</div>
 </body>
 </html>
