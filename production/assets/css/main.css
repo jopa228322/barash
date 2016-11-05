@@ -414,7 +414,7 @@ a {
         font-size: 12.5px;
         letter-spacing: 0.5px; }
   .screen-1 > header .men {
-    width: 52%;
+    width: 44%;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -519,14 +519,12 @@ a {
       -o-transform: skew(-50deg); }
 
 .screen-2 {
-  height: 100%;
   width: 100%; }
   .screen-2 .wrapper {
     height: 100%; }
     .screen-2 .wrapper .screen-2__left-column, .screen-2 .wrapper .screen-2__right-column {
       width: 100%;
       min-width: 640px;
-      height: 100%;
       position: relative; }
     .screen-2 .wrapper .screen-2__left-column {
       background-color: white;
@@ -537,11 +535,8 @@ a {
     .screen-2 .wrapper .screen-2__right-column {
       background-color: white; }
       .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan {
-        width: 90%;
-        height: 100%;
         margin: 0 auto;
-        padding-top: 3%;
-        padding-bottom: 3%; }
+        padding-top: 3%; }
         .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk {
           margin: 0 10px;
           line-height: 1.5;
@@ -569,8 +564,7 @@ a {
               width: 25%;
               margin-left: 0; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis {
-            width: 30%;
-            padding-bottom: 6%; }
+            width: 30%; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__imgopis {
               width: 40%;
               height: 50%;
@@ -611,7 +605,6 @@ a {
         width: 90%;
         height: 100%;
         margin: 0 auto;
-        padding-top: 3%;
         padding-bottom: 3%;
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
@@ -639,17 +632,20 @@ a {
             display: flex;
             padding-bottom: 10%; }
             .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__imgopis {
-              width: 20%;
-              height: 109px;
+              width: 13%;
               padding-right: 2.5%; }
             .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__textopis {
               width: 79.6666666%;
               margin-left: 1%;
-              padding-top: 3%; }
+              -webkit-align-self: center;
+              -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
+              .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__textopis > p {
+                width: 90%; }
 
 .screen-4 {
-  position: relative;
-  z-index: 5; }
+  margin-top: 30px; }
   .screen-4__wrapper {
     height: 100%;
     color: black; }
@@ -658,31 +654,52 @@ a {
       margin: 0  auto;
       width: 100%;
       min-width: 320px;
-      padding-top: 30px; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      border-top: 1px solid #212121; }
       .screen-4__wrapper__containerfoot__menufoot {
-        width: 80%;
+        width: 30%;
         margin: 0 auto 1%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
-        .screen-4__wrapper__containerfoot__menufoot__men {
-          width: 70%;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          height: 43px; }
-          .screen-4__wrapper__containerfoot__menufoot__men > a {
+        padding-top: 16px;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+        .screen-4__wrapper__containerfoot__menufoot__obertk-menu {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 2%; }
+          .screen-4__wrapper__containerfoot__menufoot__obertk-menu > a {
             color: #212121;
             display: block;
             font-family: "GillSansNovaBook";
-            font-size: 18px;
+            font-size: 0.9em;
             letter-spacing: 0.5px;
             margin-bottom: 1%; }
-            .screen-4__wrapper__containerfoot__menufoot__men > a > i {
-              font-size: 30px;
-              margin: 0; }
+          .screen-4__wrapper__containerfoot__menufoot__obertk-menu .a-i {
+            width: 23%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .screen-4__wrapper__containerfoot__menufoot__obertk-menu .a-i > a > i {
+              font-size: 0.9em;
+              margin: 0;
+              padding: 0;
+              color: #212121; }
         .screen-4__wrapper__containerfoot__menufoot__socfoot {
           width: 29%; }
           .screen-4__wrapper__containerfoot__menufoot__socfoot > a {
@@ -692,7 +709,7 @@ a {
             margin: 7px 0 0 8%; }
       .screen-4__wrapper__containerfoot__logoandmoref {
         margin: 0 auto;
-        width: 50%;
+        width: 40%;
         height: 100%;
         display: -webkit-box;
         display: -webkit-flex;
@@ -733,8 +750,8 @@ a {
   z-index: 55;
   display: none; }
   .bgc .enter {
-    margin: -webkit-calc(33% - 510px) auto 0;
-    margin: calc(33% - 510px) auto 0;
+    margin: -webkit-calc(38% - 500px) auto 0;
+    margin: calc(38% - 500px) auto 0;
     background-color: #fff;
     width: 33%;
     -webkit-box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3);
@@ -746,8 +763,7 @@ a {
     .bgc .enter .vhod {
       padding-top: 3%;
       text-align: center;
-      margin: 0 auto;
-      display: space-around; }
+      margin: 0 auto; }
       .bgc .enter .vhod > h1 {
         font-size: 36px; }
     .bgc .enter .sign-up {

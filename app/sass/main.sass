@@ -364,7 +364,7 @@ a
 
 
 		.men 
-			width: 52%
+			width: 44%
 			align-items: center
 			height: 80px
 					
@@ -487,7 +487,6 @@ a
 			-o-transform: skew(-50deg)
 
 .screen-2
-	height: 100%
 	width: 100%
 	
 	.wrapper
@@ -496,7 +495,7 @@ a
 		.screen-2__left-column, .screen-2__right-column
 			width: 100%
 			min-width: 640px
-			height: 100%
+			//height: 100%
 			position: relative
 
 
@@ -513,12 +512,11 @@ a
 		
 
 			.screen-2__right-column__opisan
-				
-				width: 90%
-				height: 100%
+
+
 				margin: 0 auto
 				padding-top: 3%
-				padding-bottom: 3%
+
 
 				
 				&__produk
@@ -549,7 +547,7 @@ a
 								margin-left: 0		
 						&__baranopis
 							width: 30%
-							padding-bottom: 6%
+
 
 							
 							&__imgopis
@@ -567,6 +565,7 @@ a
 										margin: 0
 										font-family: "GillSansNovaBook"
 										font-size: 1em
+
 									>h3
 										font-family: "GillSansNovaheavy"
 										font-size: 1.2em
@@ -603,7 +602,6 @@ a
 				width: 90%
 				height: 100%
 				margin: 0 auto
-				padding-top: 3%
 				padding-bottom: 3%
 				box-sizing: border-box
 
@@ -633,20 +631,19 @@ a
 							display: flex
 							padding-bottom: 10%
 							&__imgopis
-								width: 20%
-								height: 109px
+								width: 13%
 								padding-right: 2.5%
 							&__textopis
 								width: 79.6666666%
 								margin-left: 1%
-								padding-top: 3%
+								align-self: center
+								>p
+									width: 90%
 
 
-.screen-4					
-	position: relative
-	z-index: 5
-	//display: none
 
+.screen-4
+	margin-top: 30px	
 	&__wrapper
 		height: 100%
 		color: black
@@ -655,28 +652,37 @@ a
 			margin: 0  auto 
 			width: 100%
 			min-width: 320px
-			padding-top: 30px
-
+			display: flex
+			border-top: 1px solid #212121
 		
 
 			&__menufoot
-				width: 80%
+				width: 30%
 				margin: 0 auto 1%
-				display: flex
-				&__men
-					width: 70%
-					align-items: center
-					height: 43px
+				padding-top: 16px
+				align-self: center
+				&__obertk-menu
+					display: flex;
+					justify-content: space-between
+					width: 100%
+					margin-bottom: 2%
 					>a
 						color: #212121
 						display: block
 						font-family: "GillSansNovaBook"
-						font-size: 18px
+						font-size: 0.9em
 						letter-spacing: 0.5px
 						margin-bottom: 1%
-						>i
-							font-size: 30px
-							margin: 0
+					.a-i
+						width: 23%
+						display: flex
+						justify-content: space-between
+						>a	
+							>i
+								font-size: 0.9em
+								margin: 0
+								padding: 0
+								color: #212121
 				&__socfoot
 					width: 29%
 					
@@ -691,7 +697,7 @@ a
 						
 			&__logoandmoref
 				margin: 0 auto
-				width: 50%
+				width: 40%
 				height: 100%
 				display: flex
 				padding: 15px
@@ -727,18 +733,19 @@ a
 	display: none
 
 	.enter 
-		margin: calc(33% - 510px) auto 0
+		margin: calc(38% - 500px) auto 0
 		background-color: #fff
 		width: 33%
 		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
 		border-radius: 10px
+
 		&.auth
 			display: none
 		.vhod
 			padding-top: 3%
 			text-align: center
 			margin: 0 auto
-			display: space-around
+
 			>h1
 				font-size: 36px;
 		.sign-up
