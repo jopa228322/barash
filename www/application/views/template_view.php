@@ -34,16 +34,18 @@
 			</div>
 			<div class="container row">
 				<div class="logoandmore">
-					<div id="logo" class="logo">
-						<img src="www/assets/img/logo.png" alt="">
-					</div>
-					<div class="freshmeat">
-						<h2>БАРАШ-ОНЛАЙН</h2>
-						<h5>СВЕЖЕЕ МЯСО НЕ ВЫХОДЯ ИЗ ДОМА</h5>
-					</div>
+					<a href="http://barash">
+						<div id="logo" class="logo">
+							<img src="www/assets/img/logo.png" alt="">
+						</div>
+						<div class="freshmeat">
+							<h2>БАРАШ-ОНЛАЙН</h2>
+							<h5>СВЕЖЕЕ МЯСО НЕ ВЫХОДЯ ИЗ ДОМА</h5>
+						</div>
+					</a>
 				</div>
 				<nav class="men row">
-					<a href="#">АКЦИИ</a>
+					<a href="http://barash/sale">АКЦИИ</a>
 					<a href="#">ПАРТНЕРСТВО</a>
 					<a href="http://barash/about">О ПРОЕКТЕ</a>
 					<a href="#" class="logOn"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>ВХОД</span></a>

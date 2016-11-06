@@ -57,6 +57,108 @@ a {
   margin: 0 auto;
   width: 100%;
   min-width: 320px; }
+  .container .more-akcii {
+    padding-top: 2%; }
+    .container .more-akcii > span {
+      font-size: 2.1em;
+      font-family: "GillSansNovaBold"; }
+    .container .more-akcii .prosto-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .container .more-akcii .prosto-block .new-akcii {
+        width: 47%;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        margin: 3% 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.1); }
+        .container .more-akcii .prosto-block .new-akcii .img-akcii {
+          width: 18%;
+          margin-left: 3%;
+          padding: 2%;
+          height: 110px; }
+        .container .more-akcii .prosto-block .new-akcii .text-akcii {
+          width: 60%; }
+          .container .more-akcii .prosto-block .new-akcii .text-akcii > p {
+            font-family: "GillSansNovaHeavy";
+            font-size: 1.5em; }
+        .container .more-akcii .prosto-block .new-akcii .bakcii {
+          background-color: #ff4f4f;
+          color: white;
+          -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          width: 21%;
+          height: 35px;
+          text-align: center;
+          margin-top: 16.3%; }
+          .container .more-akcii .prosto-block .new-akcii .bakcii > p {
+            font-size: 0.9em;
+            font-family: "GillSansNovaHeavy";
+            margin: 0;
+            padding: 6%; }
+  .container .more-akcii {
+    padding-top: 2%; }
+    .container .more-akcii > span {
+      font-size: 2.1em;
+      font-family: "GillSansNovaBold"; }
+    .container .more-akcii .prosto-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .container .more-akcii .prosto-block .new-akcii {
+        width: 47%;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        margin: 3% 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.1); }
+        .container .more-akcii .prosto-block .new-akcii .img-akcii {
+          width: 18%;
+          margin-left: 3%;
+          padding: 2%;
+          height: 110px; }
+        .container .more-akcii .prosto-block .new-akcii .text-akcii {
+          width: 60%; }
+          .container .more-akcii .prosto-block .new-akcii .text-akcii > p {
+            font-family: "GillSansNovaHeavy";
+            font-size: 1.5em; }
+        .container .more-akcii .prosto-block .new-akcii .bakcii {
+          background-color: #ff4f4f;
+          color: white;
+          -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          width: 21%;
+          height: 35px;
+          text-align: center;
+          margin-top: 16.3%; }
+          .container .more-akcii .prosto-block .new-akcii .bakcii > p {
+            font-size: 0.9em;
+            font-family: "GillSansNovaHeavy";
+            margin: 0;
+            padding: 6%; }
   .container .select-produkt > h1 {
     font-size: 40px;
     font-family: "GillSansNovaHeavy"; }
@@ -466,29 +568,33 @@ a {
         .screen-1 > header .info .kontakt .adres > i {
           padding-right: 1%; }
   .screen-1 > header .logoandmore {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     width: 25.48%;
     height: 80px; }
-    .screen-1 > header .logoandmore .logo {
-      padding: 10px; }
-    .screen-1 > header .logoandmore .freshmeat {
-      font-size: 80%;
-      text-align: center; }
-      .screen-1 > header .logoandmore .freshmeat > h2 {
-        padding: 0;
-        margin: 10px 0 0;
-        font-family: "GillSansNovaBook";
-        font-size: 27.66px;
-        letter-spacing: 0.5px; }
-      .screen-1 > header .logoandmore .freshmeat > h5 {
-        padding: 0;
-        margin: 0 0 0;
-        font-family: "GillSansNovaBook";
-        font-size: 12.5px;
-        letter-spacing: 0.5px; }
+    .screen-1 > header .logoandmore a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      color: #212121; }
+      .screen-1 > header .logoandmore a:visited {
+        color: #212121; }
+      .screen-1 > header .logoandmore a .logo {
+        padding: 10px; }
+      .screen-1 > header .logoandmore a .freshmeat {
+        font-size: 80%;
+        text-align: center; }
+        .screen-1 > header .logoandmore a .freshmeat > h2 {
+          padding: 0;
+          margin: 10px 0 0;
+          font-family: "GillSansNovaBook";
+          font-size: 27.66px;
+          letter-spacing: 0.5px; }
+        .screen-1 > header .logoandmore a .freshmeat > h5 {
+          padding: 0;
+          margin: 0 0 0;
+          font-family: "GillSansNovaBook";
+          font-size: 12.5px;
+          letter-spacing: 0.5px; }
   .screen-1 > header .men {
     width: 44%;
     -webkit-box-align: center;

@@ -568,29 +568,33 @@ a {
         .screen-1 > header .info .kontakt .adres > i {
           padding-right: 1%; }
   .screen-1 > header .logoandmore {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     width: 25.48%;
     height: 80px; }
-    .screen-1 > header .logoandmore .logo {
-      padding: 10px; }
-    .screen-1 > header .logoandmore .freshmeat {
-      font-size: 80%;
-      text-align: center; }
-      .screen-1 > header .logoandmore .freshmeat > h2 {
-        padding: 0;
-        margin: 10px 0 0;
-        font-family: "GillSansNovaBook";
-        font-size: 27.66px;
-        letter-spacing: 0.5px; }
-      .screen-1 > header .logoandmore .freshmeat > h5 {
-        padding: 0;
-        margin: 0 0 0;
-        font-family: "GillSansNovaBook";
-        font-size: 12.5px;
-        letter-spacing: 0.5px; }
+    .screen-1 > header .logoandmore a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      color: #212121; }
+      .screen-1 > header .logoandmore a:visited {
+        color: #212121; }
+      .screen-1 > header .logoandmore a .logo {
+        padding: 10px; }
+      .screen-1 > header .logoandmore a .freshmeat {
+        font-size: 80%;
+        text-align: center; }
+        .screen-1 > header .logoandmore a .freshmeat > h2 {
+          padding: 0;
+          margin: 10px 0 0;
+          font-family: "GillSansNovaBook";
+          font-size: 27.66px;
+          letter-spacing: 0.5px; }
+        .screen-1 > header .logoandmore a .freshmeat > h5 {
+          padding: 0;
+          margin: 0 0 0;
+          font-family: "GillSansNovaBook";
+          font-size: 12.5px;
+          letter-spacing: 0.5px; }
   .screen-1 > header .men {
     width: 44%;
     -webkit-box-align: center;
