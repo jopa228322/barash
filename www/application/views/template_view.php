@@ -43,48 +43,16 @@
 					</div>
 				</div>
 				<nav class="men row">
-					<a href="#">ПРОДУКЦИЯ</a>
 					<a href="#">АКЦИИ</a>
 					<a href="#">ПАРТНЕРСТВО</a>
-					<a href="#">О ПРОЕКТЕ</a>
+					<a href="http://barash/about">О ПРОЕКТЕ</a>
 					<a href="#" class="logOn"><i class="fa fa-sign-in" aria-hidden="true"></i> <span>ВХОД</span></a>
-					<a href="#" class="lk"><i class="fa fa-user" aria-hidden="true"></i> <span>ЛИЧНЫЙ КАБИНЕТ</span></a>
+					<a href="http://barash/user" class="lk"><i class="fa fa-user" aria-hidden="true"></i> <span>ЛИЧНЫЙ КАБИНЕТ</span></a>
 				</nav>
 			</div>
 		</header>		
 	<?php include 'application/views/'.$content_view; ?>
-	<section class="screen-4">
-			<div class="screen-4__wrapper">
-			<footer class="screen-4__wrapper__containerfoot">
-					<div class="screen-4__wrapper__containerfoot__logoandmoref">
-						<div class="screen-4__wrapper__containerfoot__logoandmoref__logof">
-							<img src="www/assets/img/logo.png" alt="">
-						</div>
-							<div class="screen-4__wrapper__containerfoot__logoandmoref__freshmeatf">
-								<h2>БАРАШ-ОНЛАЙН</h2>
-								<h5>СВЕЖЕЕ МЯСО НЕ ВЫХОДЯ ИЗ ДОМА</h5>
-							</div>
 
-					</div>
-					<div class="screen-4__wrapper__containerfoot__menufoot">
-					<nav class="screen-4__wrapper__containerfoot__menufoot__men row">
-						<a href="#">ПРОДУКЦИЯ</a>
-						<a href="#">АКЦИИ</a>
-						<a href="#">ПАРТНЕРСТВО</a>
-						<a href="#">О ПРОЕКТЕ</a>
-						<a href="#">ЛИЧНЫЙ КАБИНЕТ</a>
-					</nav>
-					<div class="screen-4__wrapper__containerfoot__menufoot__socfoot">
-						<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					</div>
-					</div>
-					
-				</footer>	
-			</div>
-	</section>  
 
 	 <div class="bgc">
 		<div class="enter auth">
@@ -233,7 +201,14 @@
                 }
 			})
 		})
-
+$(document).ready(function(){
+     $(".button-rectangle").on("click",function(){
+     		$(".screen-2").css("display","none");
+     		$(".form").css("display","block");
+     		var s = $(".form").offset();
+     		$("body").animate({ scrollTop: s.top }, 1100);
+     })  
+	});
 	</script>
 </body>
 </html>

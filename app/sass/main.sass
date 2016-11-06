@@ -121,9 +121,13 @@ a
 				font-size: 14px
 			
 	.podbor-obertk
-		width: 92%
 		margin: 0 auto
-		display: flex
+		.vibr-produkt
+			span
+				background-color: #52ce22
+				border-radius: 10px
+				padding: 3px 20px 
+				color: #fff
 		.kol-vo
 			width: 150px
 			margin: 0 auto
@@ -145,19 +149,21 @@ a
 				border: 0
 				font-size: 25px
 				color: #52ce22
-				top: -2px
+				top: 16px
+				height: 25px
+				width: 25px
 		
 		#master, #Addhead, #AddSh, #AddOther
 			display: none
 		#master + label, #Addhead + label, #AddSh + label, #AddOther + label
 				position: relative
-				padding-left: 20px
+				padding-left: 30px
 				&:before
 					content: ""
 					display: block
 					position: absolute
 					top: 0px
-					left: 0px
+					left: 3px
 					color: #212121
 					height: 10px
 					width: 10px
@@ -176,7 +182,7 @@ a
 					content: ""
 					display: block
 					position: absolute
-					top: 0px
+					top: 18px
 					left: 0px
 					color: #212121
 					height: 16px
@@ -194,8 +200,8 @@ a
 			width: 100%				
 			.opis-sel-tov
 				display: flex
-				width: 27%
-				.live-eat
+				
+				.live-eat>div
 					>input
 						margin-top: 15px
 						padding-top15px
@@ -216,9 +222,10 @@ a
 			.privez-tovar
 				width: 39%	
 	.oform-zakaz
-		width: 100%
+
 		display: flex
 		justify-content: space-between
+		margin: 0 0 0 30px
 		>div
 			box-sizing: border-box
 			>input
@@ -925,3 +932,5 @@ a
 			padding-top: 10%
 			padding-bottom: 10%
 
+.form
+	display: none

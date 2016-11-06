@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/jquery-mousewheel/jquery.mousewheel.js"></script>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/media.css">
-	<title>Document</title>
-</head>
-<body>
 <section class="screen-3" id="screen-3">	
 			<div class="wrapper row">
 				<div class="screen-3__left-column"></div>
@@ -32,7 +17,7 @@
 								</div>	
 								<div class="screen-3__right-column__opisan__produk__obertk__baranopis">
 									<div class="screen-3__right-column__opisan__produk__obertk__baranopis__imgopis">
-										<img src="img/Layer-4-3.png" >
+										<img src="www/assets/img/Layer-4-3.png" >
 									</div>
 										<div class="screen-3__right-column__opisan__produk__obertk__baranopis__textopis">
 											<p>
@@ -42,7 +27,7 @@
 								</div>
 									<div class="screen-3__right-column__opisan__produk__obertk__baranopis">
 									<div class="screen-3__right-column__opisan__produk__obertk__baranopis__imgopis">
-										<img src="img/Layer-5-3.png" >
+										<img src="www/assets/img/Layer-5-3.png" >
 									</div>
 										<div class="screen-3__right-column__opisan__produk__obertk__baranopis__textopis">
 											<p>
@@ -53,7 +38,7 @@
 								</div>
 								<div class="screen-3__right-column__opisan__produk__obertk__baranopis">
 									<div class="screen-3__right-column__opisan__produk__obertk__baranopis__imgopis">
-										<img src="img/Layer-6-3.png" >
+										<img src="www/assets/img/Layer-6-3.png" >
 									</div>
 										<div class="screen-3__right-column__opisan__produk__obertk__baranopis__textopis">
 											<p>
@@ -71,6 +56,37 @@
 			</div>
 	</section> 
 
-	
-</body>
-</html>
+<section class="screen-4">
+			<div class="screen-4__wrapper">
+			<footer class="screen-4__wrapper__containerfoot">
+					<div class="screen-4__wrapper__containerfoot__logoandmoref">
+						<div class="screen-4__wrapper__containerfoot__logoandmoref__logof">
+							<img src="www/assets/img/logo.png" alt="">
+						</div>
+							<div class="screen-4__wrapper__containerfoot__logoandmoref__freshmeatf">
+								<h2>БАРАШ-ОНЛАЙН</h2>
+								<h5>СВЕЖЕЕ МЯСО НЕ ВЫХОДЯ ИЗ ДОМА</h5>
+							</div>
+
+					</div>
+					<div class="screen-4__wrapper__containerfoot__menufoot">
+					<div class="screen-4__wrapper__containerfoot__menufoot__obertk-menu">
+						<a href="#">ПРОДУКЦИЯ</a>
+						<a href="#">АКЦИИ</a>
+						<a href="#">ПАРТНЕРСТВО</a>
+					</div>
+					<div class="screen-4__wrapper__containerfoot__menufoot__obertk-menu">
+							<a href="#">О ПРОЕКТЕ</a>
+							<a href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+							<div class="a-i">
+								<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</div>
+					</div>
+					</div>
+					
+				</footer>	
+			</div>
+	</section>  

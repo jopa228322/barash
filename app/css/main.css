@@ -128,12 +128,13 @@ a {
         font-family: "GillSansNovaHeavy";
         font-size: 14px; }
   .container .podbor-obertk {
-    width: 92%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    margin: 0 auto; }
+    .container .podbor-obertk .vibr-produkt span {
+      background-color: #52ce22;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      padding: 3px 20px;
+      color: #fff; }
     .container .podbor-obertk .kol-vo {
       width: 150px;
       margin: 0 auto;
@@ -161,18 +162,20 @@ a {
         border: 0;
         font-size: 25px;
         color: #52ce22;
-        top: -2px; }
+        top: 16px;
+        height: 25px;
+        width: 25px; }
     .container .podbor-obertk #master, .container .podbor-obertk #Addhead, .container .podbor-obertk #AddSh, .container .podbor-obertk #AddOther {
       display: none; }
     .container .podbor-obertk #master + label, .container .podbor-obertk #Addhead + label, .container .podbor-obertk #AddSh + label, .container .podbor-obertk #AddOther + label {
       position: relative;
-      padding-left: 20px; }
+      padding-left: 30px; }
       .container .podbor-obertk #master + label:before, .container .podbor-obertk #Addhead + label:before, .container .podbor-obertk #AddSh + label:before, .container .podbor-obertk #AddOther + label:before {
         content: "";
         display: block;
         position: absolute;
         top: 0px;
-        left: 0px;
+        left: 3px;
         color: #212121;
         height: 10px;
         width: 10px;
@@ -191,7 +194,7 @@ a {
         content: "";
         display: block;
         position: absolute;
-        top: 0px;
+        top: 18px;
         left: 0px;
         color: #212121;
         height: 16px;
@@ -217,24 +220,22 @@ a {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
-        width: 27%; }
-        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > input {
+        display: flex; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div > input {
           margin-top: 15px; }
-        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > label {
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div > label {
           display: block;
           margin-bottom: 5%;
           font-family: "GillSansNovaBold";
           font-size: 36px; }
-          .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > label > p {
+          .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div > label > p {
             font-size: 13px;
             margin: 0; }
-        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat .obernut {
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div .obernut {
           margin-bottom: 2%; }
       .container .podbor-obertk .row-sel .privez-tovar {
         width: 39%; }
   .container .oform-zakaz {
-    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -242,7 +243,8 @@ a {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 0 0 30px; }
     .container .oform-zakaz > div {
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
@@ -946,3 +948,6 @@ a {
       font-size: 18px;
       padding-top: 10%;
       padding-bottom: 10%; }
+
+.form {
+  display: none; }

@@ -3,6 +3,8 @@ body {
   outline: 0;
   padding: 0;
   height: 100%; }
+  body input:focus {
+    outline: none; }
   body img {
     width: 100%;
     height: 100%; }
@@ -35,8 +37,20 @@ a {
   -webkit-transition: 0.5s all;
   transition: 0.5s all; }
 
-#animal_sheep:checked + label {
-  color: red; }
+#animal_sheep:checked + label, #animal_cow:checked + label, #animal_chicken:checked + label, #animal_head:checked + label, #animal_sherst:checked + label, #animal_other:checked + label {
+  border-color: #52ce22;
+  position: relative; }
+  #animal_sheep:checked + label .icon-text:after, #animal_cow:checked + label .icon-text:after, #animal_chicken:checked + label .icon-text:after, #animal_head:checked + label .icon-text:after, #animal_sherst:checked + label .icon-text:after, #animal_other:checked + label .icon-text:after {
+    content: "\f00c";
+    display: block;
+    position: absolute;
+    top: 0px;
+    color: #52ce22;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    font-family: "FontAwesome";
+    font-size: 50px; }
 
 .container {
   max-width: 1280px;
@@ -58,98 +72,139 @@ a {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 1.9%; }
-    .container .select-produkt .select-meat .sheep label {
-      border-color: #212121;
-      margin: 2px;
-      width: 27%;
-      padding: 15px;
-      border: 1px solid;
+    padding: 0 1.9%;
+    margin-bottom: 5%; }
+    .container .select-produkt .select-meat > div {
+      width: 27%; }
+      .container .select-produkt .select-meat > div input {
+        display: none; }
+      .container .select-produkt .select-meat > div label {
+        border-color: #212121;
+        margin: 2px;
+        padding: 15px;
+        border: 1px solid;
+        -webkit-border-radius: 70px;
+        border-radius: 70px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .container .select-produkt .select-meat > div label > input {
+          display: none;
+          color: red; }
+          .container .select-produkt .select-meat > div label > input .img-icon {
+            width: 28%;
+            height: 80%;
+            padding: 1%; }
+          .container .select-produkt .select-meat > div label > input .icon-text {
+            width: 55%;
+            padding: 1%;
+            margin: 0 auto; }
+            .container .select-produkt .select-meat > div label > input .icon-text > h3 {
+              font-size: 16px;
+              font-family: "GillSansNovaHeavy"; }
+            .container .select-produkt .select-meat > div label > input .icon-text > p {
+              font-size: 14px;
+              font-family: "GillSansNovaLight"; }
+  .container .stop-zakaz {
+    margin-top: 2%; }
+    .container .stop-zakaz > button {
+      background-image: url(../img/trash.png);
+      background-size: 104% 110%;
       -webkit-border-radius: 70px;
       border-radius: 70px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .container .select-produkt .select-meat .sheep label > input {
-        display: none;
-        color: red; }
-        .container .select-produkt .select-meat .sheep label > input .img-icon {
-          width: 28%;
-          height: 80%;
-          padding: 1%; }
-        .container .select-produkt .select-meat .sheep label > input .icon-text {
-          width: 55%;
-          padding: 1%;
-          margin: 0 auto; }
-          .container .select-produkt .select-meat .sheep label > input .icon-text > h3 {
-            font-size: 16px;
-            font-family: "GillSansNovaHeavy"; }
-          .container .select-produkt .select-meat .sheep label > input .icon-text > p {
-            font-size: 14px;
-            font-family: "GillSansNovaLight"; }
-    .container .select-produkt .select-meat .cow {
-      border-color: #212121;
-      margin: 2px;
-      width: 27%;
-      padding: 15px;
-      border: 1px solid;
-      -webkit-border-radius: 70px;
-      border-radius: 70px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .container .select-produkt .select-meat .cow > label > input {
-        display: none;
-        background-color: red; }
-        .container .select-produkt .select-meat .cow > label > input .img-icon {
-          width: 28%;
-          height: 80%;
-          padding: 1%; }
-        .container .select-produkt .select-meat .cow > label > input .icon-text {
-          width: 55%;
-          padding: 1%;
-          margin: 0 auto; }
-          .container .select-produkt .select-meat .cow > label > input .icon-text > h3 {
-            font-size: 16px;
-            font-family: "GillSansNovaHeavy"; }
-          .container .select-produkt .select-meat .cow > label > input .icon-text > p {
-            font-size: 14px;
-            font-family: "GillSansNovaLight"; }
-    .container .select-produkt .select-meat .chicken {
-      border-color: #212121;
-      margin: 2px;
-      width: 27%;
-      padding: 15px;
-      border: 1px solid;
-      -webkit-border-radius: 70px;
-      border-radius: 70px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .container .select-produkt .select-meat .chicken .img-icon {
-        width: 28%;
-        height: 80%;
-        padding: 1%; }
-      .container .select-produkt .select-meat .chicken .icon-text {
-        width: 55%;
-        padding: 1%;
-        margin: 0 auto; }
-        .container .select-produkt .select-meat .chicken .icon-text > h3 {
-          font-size: 16px;
-          font-family: "GillSansNovaHeavy"; }
-        .container .select-produkt .select-meat .chicken .icon-text > p {
-          font-size: 14px;
-          font-family: "GillSansNovaLight"; }
+      border: none;
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: white;
+      width: 30%;
+      display: block;
+      margin: 0 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .container .stop-zakaz > button > p {
+        font-family: "GillSansNovaHeavy";
+        font-size: 14px; }
   .container .podbor-obertk {
-    width: 92%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    margin: 0 auto; }
+    .container .podbor-obertk .vibr-produkt span {
+      background-color: #52ce22;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      padding: 3px 20px;
+      color: #fff; }
+    .container .podbor-obertk .kol-vo {
+      width: 150px;
+      margin: 0 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .container .podbor-obertk .kol-vo > input {
+        width: 100%;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        padding: 15px 30px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+    .container .podbor-obertk #master:checked + label:before, .container .podbor-obertk #Addhead:checked + label:before, .container .podbor-obertk #AddSh:checked + label:before, .container .podbor-obertk #AddOther:checked + label:before {
+      content: "\f14a";
+      border: 0; }
+    .container .podbor-obertk #live:checked + label,
+    .container .podbor-obertk #meats:checked + label {
+      color: #52ce22; }
+      .container .podbor-obertk #live:checked + label:before,
+      .container .podbor-obertk #meats:checked + label:before {
+        content: "\f05d";
+        border: 0;
+        font-size: 25px;
+        color: #52ce22;
+        top: 16px;
+        height: 25px;
+        width: 25px; }
+    .container .podbor-obertk #master, .container .podbor-obertk #Addhead, .container .podbor-obertk #AddSh, .container .podbor-obertk #AddOther {
+      display: none; }
+    .container .podbor-obertk #master + label, .container .podbor-obertk #Addhead + label, .container .podbor-obertk #AddSh + label, .container .podbor-obertk #AddOther + label {
+      position: relative;
+      padding-left: 30px; }
+      .container .podbor-obertk #master + label:before, .container .podbor-obertk #Addhead + label:before, .container .podbor-obertk #AddSh + label:before, .container .podbor-obertk #AddOther + label:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        color: #212121;
+        height: 10px;
+        width: 10px;
+        font-family: "FontAwesome";
+        font-size: 15px;
+        border: 2px solid #212121;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        margin-top: 2%; }
+    .container .podbor-obertk #live, .container .podbor-obertk #meats {
+      display: none; }
+    .container .podbor-obertk #live + label, .container .podbor-obertk #meats + label {
+      position: relative;
+      padding-left: 30px; }
+      .container .podbor-obertk #live + label:before, .container .podbor-obertk #meats + label:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        color: #212121;
+        height: 16px;
+        width: 16px;
+        font-family: "FontAwesome";
+        font-size: 15px;
+        border: 2px solid #212121;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        margin-top: 1%; }
     .container .podbor-obertk .row-sel {
       height: 100%;
       display: -webkit-box;
@@ -165,12 +220,22 @@ a {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
-        width: 27%; }
+        display: flex; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div > input {
+          margin-top: 15px; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div > label {
+          display: block;
+          margin-bottom: 5%;
+          font-family: "GillSansNovaBold";
+          font-size: 36px; }
+          .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div > label > p {
+            font-size: 13px;
+            margin: 0; }
+        .container .podbor-obertk .row-sel .opis-sel-tov .live-eat > div .obernut {
+          margin-bottom: 2%; }
       .container .podbor-obertk .row-sel .privez-tovar {
         width: 39%; }
   .container .oform-zakaz {
-    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -178,37 +243,48 @@ a {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 0 0 30px; }
+    .container .oform-zakaz > div {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .container .oform-zakaz > div > input {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
     .container .oform-zakaz .fio {
-      width: 30%;
-      text-align: center; }
+      width: 350px; }
       .container .oform-zakaz .fio > input {
-        text-align: center;
+        width: 100%;
         border: 1px solid #212121;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        margin: 5%;
-        padding: 2%; }
+        padding: 15px 30px; }
     .container .oform-zakaz .p-number {
-      width: 30%;
-      text-align: center; }
+      width: 350px; }
       .container .oform-zakaz .p-number > input {
-        text-align: center;
+        width: 100%;
         border: 1px solid #212121;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        margin: 5%;
-        padding: 2%; }
+        padding: 15px 30px; }
     .container .oform-zakaz .adres {
-      width: 30%;
-      text-align: center; }
+      width: 350px; }
       .container .oform-zakaz .adres > input {
-        text-align: center;
+        width: 100%;
         border: 1px solid #212121;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        margin: 5%;
-        padding: 2%; }
+        padding: 15px 30px; }
+    .container .oform-zakaz .data {
+      width: 180px; }
+      .container .oform-zakaz .data > input {
+        width: 100%;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        padding: 15px 30px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
 
 .project {
   display: none;
@@ -414,7 +490,7 @@ a {
         font-size: 12.5px;
         letter-spacing: 0.5px; }
   .screen-1 > header .men {
-    width: 52%;
+    width: 44%;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -427,18 +503,6 @@ a {
       font-family: "GillSansNovaBook";
       font-size: 18px;
       letter-spacing: 0.5px; }
-      .screen-1 > header .men a:before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 24px;
-        width: 22px;
-        background-image: url("../img/barashub.png");
-        top: 0;
-        left: -32px;
-        -webkit-transition: 0.2s all;
-        transition: 0.2s all;
-        opacity: 0; }
       .screen-1 > header .men a:hover:before {
         opacity: 1; }
       .screen-1 > header .men a:last-child:before {
@@ -455,14 +519,14 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
-    padding-top: 15%; }
+    align-items: center; }
     .screen-1 .welcome > h2 {
       color: white;
       padding-top: 16.03%;
       letter-spacing: 1px;
       font-size: 36px;
-      font-family: "GillSansNovaHeavy"; }
+      font-family: "GillSansNovaHeavy";
+      margin: 0; }
     .screen-1 .welcome > a {
       margin: 40px;
       padding: 15px;
@@ -479,10 +543,10 @@ a {
         font-size: 20px;
         letter-spacing: 1px; }
     .screen-1 .welcome .button-rectangle {
-      width: 294px;
+      width: 291px;
       text-align: center;
       border: 2px solid #fff;
-      padding: 12px;
+      padding: 11px;
       position: relative;
       z-index: 2;
       -webkit-box-sizing: border-box;
@@ -510,8 +574,8 @@ a {
       transition: 0.3s; }
     .screen-1 .welcome .button-rectangle:hover:before {
       opacity: 1;
-      left: 37px;
-      width: 208px;
+      left: 34px;
+      width: 212px;
       background-color: #fff;
       -webkit-transition: 0.8s;
       transition: 0.8s;
@@ -520,14 +584,14 @@ a {
       -o-transform: skew(-50deg); }
 
 .screen-2 {
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: -webkit-calc(100% - 127px);
+  height: calc(100% - 127px); }
   .screen-2 .wrapper {
     height: 100%; }
     .screen-2 .wrapper .screen-2__left-column, .screen-2 .wrapper .screen-2__right-column {
-      width: 50%;
+      width: 100%;
       min-width: 640px;
-      height: 100%;
       position: relative; }
     .screen-2 .wrapper .screen-2__left-column {
       background-color: white;
@@ -538,41 +602,53 @@ a {
     .screen-2 .wrapper .screen-2__right-column {
       background-color: white; }
       .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan {
-        width: 90%;
-        height: 100%;
         margin: 0 auto;
-        padding-top: 3%;
-        padding-bottom: 3%; }
+        padding-top: 3%; }
         .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk {
           margin: 0 10px;
-          line-height: 1.5; }
-          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk > h2 {
-            font-family: "GillSansNovaheavy";
-            font-size: 36px; }
+          line-height: 1.5;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk > p {
             font-family: "GillSansNovaBook";
             font-size: 18px; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext {
             padding-bottom: 3%; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext > p {
-              width: 90%; }
+              width: 50%;
+              line-height: 1.5em;
+              font-family: "GillSansNovaBook"; }
+            .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext > h2 {
+              font-family: "GillSansNovaheavy";
+              font-size: 2em; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__opistext > hr {
-              width: 26%;
+              width: 25%;
               margin-left: 0; }
           .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            padding-bottom: 10%; }
+            width: 30%; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__imgopis {
-              width: 20%;
-              height: 175px;
-              padding-right: 2.5%; }
+              width: 40%;
+              height: 50%;
+              padding-right: 2.5%;
+              margin: 0 auto; }
             .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__textopis {
-              width: 79.6666666%;
-              margin-left: 1%;
-              padding-top: 3%; }
+              width: 100%;
+              margin-top: 8%;
+              text-align: center; }
+              .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__textopis > span > p {
+                padding: 0;
+                margin: 0;
+                font-family: "GillSansNovaBook";
+                font-size: 1em; }
+              .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan__produk__obertk__baranopis__textopis > span > h3 {
+                font-family: "GillSansNovaheavy";
+                font-size: 1.2em; }
 
 .screen-3 {
   height: 100%;
@@ -596,13 +672,13 @@ a {
         width: 90%;
         height: 100%;
         margin: 0 auto;
-        padding-top: 3%;
         padding-bottom: 3%;
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
         .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk {
           margin: 0 10px;
-          line-height: 1.5; }
+          line-height: 1.5;
+          height: 100%; }
           .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk > h2 {
             font-family: "GillSansNovaheavy";
             font-size: 36px; }
@@ -623,17 +699,20 @@ a {
             display: flex;
             padding-bottom: 10%; }
             .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__imgopis {
-              width: 20%;
-              height: 175px;
+              width: 13%;
               padding-right: 2.5%; }
             .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__textopis {
               width: 79.6666666%;
               margin-left: 1%;
-              padding-top: 3%; }
+              -webkit-align-self: center;
+              -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
+              .screen-3 .wrapper .screen-3__right-column__opisan__produk__obertk__baranopis__textopis > p {
+                width: 90%; }
 
 .screen-4 {
-  position: relative;
-  z-index: 5; }
+  margin-top: 30px; }
   .screen-4__wrapper {
     height: 100%;
     color: black; }
@@ -642,31 +721,52 @@ a {
       margin: 0  auto;
       width: 100%;
       min-width: 320px;
-      padding-top: 30px; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      border-top: 1px solid #212121; }
       .screen-4__wrapper__containerfoot__menufoot {
-        width: 80%;
+        width: 30%;
         margin: 0 auto 1%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
-        .screen-4__wrapper__containerfoot__menufoot__men {
-          width: 70%;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          height: 43px; }
-          .screen-4__wrapper__containerfoot__menufoot__men > a {
+        padding-top: 16px;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+        .screen-4__wrapper__containerfoot__menufoot__obertk-menu {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 2%; }
+          .screen-4__wrapper__containerfoot__menufoot__obertk-menu > a {
             color: #212121;
             display: block;
             font-family: "GillSansNovaBook";
-            font-size: 18px;
+            font-size: 0.9em;
             letter-spacing: 0.5px;
             margin-bottom: 1%; }
-            .screen-4__wrapper__containerfoot__menufoot__men > a > i {
-              font-size: 30px;
-              margin: 0; }
+          .screen-4__wrapper__containerfoot__menufoot__obertk-menu .a-i {
+            width: 23%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .screen-4__wrapper__containerfoot__menufoot__obertk-menu .a-i > a > i {
+              font-size: 0.9em;
+              margin: 0;
+              padding: 0;
+              color: #212121; }
         .screen-4__wrapper__containerfoot__menufoot__socfoot {
           width: 29%; }
           .screen-4__wrapper__containerfoot__menufoot__socfoot > a {
@@ -676,7 +776,7 @@ a {
             margin: 7px 0 0 8%; }
       .screen-4__wrapper__containerfoot__logoandmoref {
         margin: 0 auto;
-        width: 50%;
+        width: 40%;
         height: 100%;
         display: -webkit-box;
         display: -webkit-flex;
@@ -717,8 +817,8 @@ a {
   z-index: 55;
   display: none; }
   .bgc .enter {
-    margin: -webkit-calc(33% - 510px) auto 0;
-    margin: calc(33% - 510px) auto 0;
+    margin: -webkit-calc(38% - 500px) auto 0;
+    margin: calc(38% - 500px) auto 0;
     background-color: #fff;
     width: 33%;
     -webkit-box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3);
@@ -730,8 +830,7 @@ a {
     .bgc .enter .vhod {
       padding-top: 3%;
       text-align: center;
-      margin: 0 auto;
-      display: space-around; }
+      margin: 0 auto; }
       .bgc .enter .vhod > h1 {
         font-size: 36px; }
     .bgc .enter .sign-up {
@@ -849,3 +948,6 @@ a {
       font-size: 18px;
       padding-top: 10%;
       padding-bottom: 10%; }
+
+.form {
+  display: none; }

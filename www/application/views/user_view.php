@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
-	<link rel="stylesheet" href="css/font.css">
-	<!--<link rel="stylesheet" href="personal area.css">-->
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-<section  id="screen-1" class="screen-1 screen" class="colordiv" >
+<script>
+	$(".screen-1").css("height","auto")
+</script>
+
 	<div class="container zakazi">
 		<div class="myzak">
 			<h1> МОИ ЗАКАЗЫ</h1>
@@ -18,7 +9,7 @@
 		<div class="opiszakaza">
 			<div class="img-zakaz">
 				<div class="sheep">
-					<img src="img/sheep.png" alt="">
+					<img src="www/assets/img/sheep.png" alt="">
 				</div>
 			</div>
 			<div class="about-zakaz">
@@ -68,7 +59,7 @@
 		<div class="opiszakaza">
 			<div class="img-zakaz">
 				<div class="sheep">
-					<img src="img/sheep.png" alt="">
+					<img src="www/assets/img/sheep.png" alt="">
 				</div>
 			</div>
 			<div class="obertk-about"></div>
@@ -117,7 +108,7 @@
 		<div class="opiszakaza">
 			<div class="img-zakaz">
 				<div class="sheep">
-					<img src="img/sheep.png" alt="">
+					<img src="www/assets/img/sheep.png" alt="">
 				</div>
 			</div>
 			<div class="obertk-about"></div>
@@ -165,6 +156,37 @@
 		</div>
 	</div>
 	</section>
+<section class="screen-4">
+			<div class="screen-4__wrapper">
+			<footer class="screen-4__wrapper__containerfoot">
+					<div class="screen-4__wrapper__containerfoot__logoandmoref">
+						<div class="screen-4__wrapper__containerfoot__logoandmoref__logof">
+							<img src="www/assets/img/logo.png" alt="">
+						</div>
+							<div class="screen-4__wrapper__containerfoot__logoandmoref__freshmeatf">
+								<h2>БАРАШ-ОНЛАЙН</h2>
+								<h5>СВЕЖЕЕ МЯСО НЕ ВЫХОДЯ ИЗ ДОМА</h5>
+							</div>
 
-</body>
-</html>
+					</div>
+					<div class="screen-4__wrapper__containerfoot__menufoot">
+					<div class="screen-4__wrapper__containerfoot__menufoot__obertk-menu">
+						<a href="#">ПРОДУКЦИЯ</a>
+						<a href="#">АКЦИИ</a>
+						<a href="#">ПАРТНЕРСТВО</a>
+					</div>
+					<div class="screen-4__wrapper__containerfoot__menufoot__obertk-menu">
+							<a href="#">О ПРОЕКТЕ</a>
+							<a href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+							<div class="a-i">
+								<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</div>
+					</div>
+					</div>
+					
+				</footer>	
+			</div>
+	</section>  
